@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* Other variables are defined by Bootstrap */
+:root {
+  --nav-link-bg-color: rgba(158, 197, 254, 0.8);
+  --dropdown-item-bg-color: rgba(207, 226, 255, 0.8);
+  --card-body-text-color: #444;
+}
+
+body {
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+#navbarNavDropdown {
+  align-content: center;
+}
+
+ul .sub {
+  list-style-type: none;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  margin: 0 1rem;
+}
+
+.nav-selector .nav-link.active,
+.nav-selector .nav-link:not(.active):hover,
+.nav-selector .nav-link:not(.active):focus {
+  background-color: var(--nav-link-bg-color);
+  box-shadow: var(--bs-box-shadow);
+  border-radius: var(--bs-border-radius);
+}
+
+.dropdown-menu .sub.fs-6 {
+  padding-left: 0;
+}
+
+.dropdown-menu .sub.fs-6 li {
+  margin: 0 0.5rem;
+}
+
+.nav-selector .dropdown-item.active,
+.nav-selector .dropdown-item:hover,
+.nav-selector .dropdown-item:focus,
+.nav-selector .dropdown-item:focus-visible,
+.nav-selector .dropdown-item:active {
+  background-color: var(--dropdown-item-bg-color);
+  box-shadow: var(--bs-box-shadow-sm);
+  border-radius: var(--bs-border-radius-sm);
+}
+
+.nav-selector .dropdown-item:focus-visible {
+  outline: none;
+}
+
+.nav-selector .dropdown-item.active,
+.nav-selector .dropdown-item:focus,
+.nav-selector .dropdown-item:active {
+  color: inherit !important;
+}
+
+/* Changes dropdown icon */
+.show::after {
+  border-top: 0 !important;
+  border-right: 0.3em solid transparent !important;
+  border-bottom: 0.3em solid !important;
+  border-left: 0.3em solid transparent !important;
+}
+
+a.active {
+  cursor: auto;
+}
+
+nav .bi {
+  font-size: 1.75rem;
+}
+
+.card {
+  max-width: 18rem;
+}
+
+.product.card {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.product.card .card-img {
+  width: 90px;
+}
+
+.product.card .card-text {
+  margin-bottom: 0.25rem;
+}
+
+.card-body {
+  color: var(--card-body-text-color);
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+strong.card-text {
+  margin-left: 2.5rem;
+}
+
+[data-bs-toggle="tooltip"] {
+  display: none;
+  margin-right: 0.25rem;
+}
+
+.card-footer .bi {
+  font-size: 1.25rem;
+  margin-right: 10px;
+}
+
+.card-footer.btn {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+a.purchase {
+  color: inherit;
+}
+
+.purchase,
+.card-footer p {
+  text-transform: uppercase;
+}
+
+.card-footer a {
+  font-size: 1.5rem;
+}
+
+#product-img {
+  max-width: 18rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+#product-info .selected {
+  cursor: auto !important;
+}

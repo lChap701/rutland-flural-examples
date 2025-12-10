@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purchasing Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/rutland.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="padding: 1rem">
+    <div
+      class="d-flex justify-content-center flex-md-row flex-column align-items-center"
+    >
+      <div
+        role="group"
+        id="product-img"
+        class="d-flex justify-content-center flex-sm-shrink-1"
+      >
+        <svg
+          aria-label="Placeholder"
+          class="bd-placeholder-img"
+          height="200"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="180"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text text-anchor="middle" x="50%" y="50%" fill="#dee2e6" dy=".3em">
+            Placeholder
+          </text>
+        </svg>
+      </div>
+
+      <div role="group" id="product-info" class="mt-md-0 mt-2">
+        <div role="group" class="d-sm-block d-flex flex-column">
+          <p>Select Product</p>
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="btnStandard"
+            checked
+            autocomplete="off"
+            onclick="updateDisplay(this)"
+          />
+          <label class="btn btn-outline-secondary selected" for="btnStandard"
+            ><span>Standard</span><br />$50.00</label
+          >
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="btnDeluxe"
+            autocomplete="off"
+            onclick="updateDisplay(this)"
+          />
+          <label class="btn btn-outline-secondary" for="btnDeluxe"
+            ><span>Deluxe</span><br />$100.00</label
+          >
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="btnPremium"
+            autocomplete="off"
+            onclick="updateDisplay(this)"
+          />
+          <label class="btn btn-outline-secondary" for="btnPremium"
+            ><span>Premium</span><br />$150.00</label
+          >
+        </div>
+
+        <p class="mt-2">Description for Standard edition</p>
+      </div>
+    </div>
+
+    <h4 class="fw-bold mt-3">
+      Interested In Our Selection? Why not add a little extra!
+    </h4>
+    <div
+      class="d-flex justify-content-between flex-md-row flex-column align-items-center"
+    >
+      <div class="card text-bg-light m-3 d-flex flex-row product" role="group">
+        <svg
+          aria-label="Placeholder"
+          class="bd-placeholder-img card-img"
+          height="100"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text text-anchor="middle" x="50%" y="50%" fill="#dee2e6" dy=".3em">
+            Placeholder
+          </text>
+        </svg>
+
+        <div role="group" class="card-body">
+          <label class="fw-bold card-text">Title</label>
+          <select class="form-select" aria-label="">
+            <option selected></option>
+            <option value="Product | $45.00">Product | $45.00</option>
+            <option value="Product | $90.00">Product | $90.00</option>
+            <option value="Product | $180.00">Product | $180.00</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card text-bg-light m-3 d-flex flex-row product" role="group">
+        <svg
+          aria-label="Placeholder"
+          class="bd-placeholder-img card-img"
+          height="100"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text text-anchor="middle" x="50%" y="50%" fill="#dee2e6" dy=".3em">
+            Placeholder
+          </text>
+        </svg>
+
+        <div role="group" class="card-body">
+          <label class="fw-bold card-text">Title</label>
+          <select class="form-select" aria-label="">
+            <option selected></option>
+            <option value="Product | $50.00">Product | $50.00</option>
+            <option value="Product | $100.00">Product | $100.00</option>
+            <option value="Product | $200.00">Product | $200.00</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card text-bg-light m-3 d-flex flex-row product" role="group">
+        <svg
+          aria-label="Placeholder"
+          class="bd-placeholder-img card-img"
+          height="100"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text text-anchor="middle" x="50%" y="50%" fill="#dee2e6" dy=".3em">
+            Placeholder
+          </text>
+        </svg>
+
+        <div role="group" class="card-body">
+          <label class="fw-bold card-text">Very Long Long Title</label>
+          <select class="form-select" aria-label="">
+            <option selected></option>
+            <option value="Product | $45.00">Product | $450.00</option>
+            <option value="Product | $90.00">Product | $900.00</option>
+            <option value="Product | $180.00">Product | $1800.00</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/exampleScript.js"></script>
+  </body>
+</html>
